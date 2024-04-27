@@ -2,6 +2,9 @@
 
 🗑🗑🗑 Amplify FrameworkのSocial Providerによる認証で、ホワイトリストによるサインアップ制限をしてみる！  
 
+[![ci](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/ci.yml/badge.svg)](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/ci.yml)
+[![cd](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/cd.yml/badge.svg)](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/cd.yml)
+
 ## 準備
 
 ```shell
@@ -61,6 +64,13 @@ GitHub Actionsのシークレット情報として以下の情報を設定して
 aws ssm put-parameter \
   --name "/amplify/<AppId>/<ENV>/AMPLIFY_amplifyauthsplimited7632fb71PreSignup_ALLOWED_EMAIL_REGEX_LIST" \
   --value "<VALUE>" \
+  --type "String" \
+  --overwrite
+
+# 例)
+aws ssm put-parameter \
+  --name "/amplify/dv1khyhqo2y2s/prod/AMPLIFY_amplifyauthsplimited7632fb71PreSignup_ALLOWED_EMAIL_REGEX_LIST" \
+  --value ".+@osawa.cloud" \
   --type "String" \
   --overwrite
 ```
