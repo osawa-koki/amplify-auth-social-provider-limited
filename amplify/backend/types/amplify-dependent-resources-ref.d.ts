@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
   "auth": {
-    "amplifyauthsplimited429f3c47": {
+    "amplifyauthsplimitedb1ce0bf7": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
       "HostedUIDomain": "string",
@@ -13,7 +13,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
-    "amplifyauthsplimited7632fb71PreSignup": {
+    "amplifyauthsplimitedb1ce0bf7PreSignup": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",

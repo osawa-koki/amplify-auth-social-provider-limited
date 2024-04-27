@@ -6,7 +6,7 @@
       "Type": "String",
       "Default": ""
     },
-    "DOMAINWHITELIST": {
+    "DOMAINALLOWLIST": {
       "Type": "String",
       "Default": ""
     },
@@ -74,12 +74,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amplifyauthsplimited7632fb71PreSignup",
+            "amplifyauthsplimitedb1ce0bf7PreSignup",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amplifyauthsplimited7632fb71PreSignup",
+                  "amplifyauthsplimitedb1ce0bf7PreSignup",
                   "-",
                   {
                     "Ref": "env"
@@ -100,8 +100,8 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
-            "DOMAINWHITELIST": {
-              "Ref": "DOMAINWHITELIST"
+            "DOMAINALLOWLIST": {
+              "Ref": "DOMAINALLOWLIST"
             },
             "DOMAINBLACKLIST": {
               "Ref": "DOMAINBLACKLIST"
@@ -120,7 +120,7 @@
                         "env": {
                           "Ref": "env"
                         },
-                        "functionName": "amplifyauthsplimited7632fb71PreSignup"
+                        "functionName": "amplifyauthsplimitedb1ce0bf7PreSignup"
                       }
                     ]
                   },
@@ -154,12 +154,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amplifyauthsplimited7632fb71PreSignup",
+            "amplifyauthsplimitedb1ce0bf7PreSignup",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amplifyauthsplimited7632fb71PreSignup",
+                  "amplifyauthsplimitedb1ce0bf7PreSignup",
                   "-",
                   {
                     "Ref": "env"
@@ -271,7 +271,7 @@
                           "env": {
                             "Ref": "env"
                           },
-                          "functionName": "amplifyauthsplimited7632fb71PreSignup"
+                          "functionName": "amplifyauthsplimitedb1ce0bf7PreSignup"
                         }
                       ]
                     },

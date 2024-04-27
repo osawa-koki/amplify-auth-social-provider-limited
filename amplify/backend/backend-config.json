@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyauthsplimited429f3c47": {
+    "amplifyauthsplimitedb1ce0bf7": {
       "customAuth": false,
       "dependsOn": [
         {
@@ -9,7 +9,7 @@
             "Name"
           ],
           "category": "function",
-          "resourceName": "amplifyauthsplimited7632fb71PreSignup",
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup",
           "triggerProvider": "Cognito"
         }
       ],
@@ -40,7 +40,7 @@
     }
   },
   "function": {
-    "amplifyauthsplimited7632fb71PreSignup": {
+    "amplifyauthsplimitedb1ce0bf7PreSignup": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -54,27 +54,35 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_deploymentBucketName": {
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_DOMAINALLOWLIST": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "amplifyauthsplimited7632fb71PreSignup"
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
         }
       ]
     },
-    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_s3Key": {
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "amplifyauthsplimited7632fb71PreSignup"
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
         }
       ]
     },
-    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_secretsPathAmplifyAppId": {
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "amplifyauthsplimited7632fb71PreSignup"
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
         }
       ]
     },
