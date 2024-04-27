@@ -26,7 +26,7 @@
         "amplifyauthsplimited7632fb71PreSignup": {
           "secretsPathAmplifyAppId": "dv1khyhqo2y2s",
           "deploymentBucketName": "amplify-amplifyauthsplimited-dev-135726-deployment",
-          "s3Key": "amplify-builds/amplifyauthsplimited7632fb71PreSignup-6b624f6f4732342b5373-build.zip"
+          "s3Key": "amplify-builds/amplifyauthsplimited7632fb71PreSignup-41325539783953793678-build.zip"
         }
       }
     }

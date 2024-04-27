@@ -271,7 +271,7 @@
                           "env": {
                             "Ref": "env"
                           },
-                          "functionName": "amplifyauthlimited5f1f1e70PreSignup"
+                          "functionName": "amplifyauthsplimited7632fb71PreSignup"
                         }
                       ]
                     },
