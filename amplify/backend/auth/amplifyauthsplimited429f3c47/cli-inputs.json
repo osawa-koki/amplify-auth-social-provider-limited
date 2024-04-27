@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "amplifyauthsplimited7632fb71_identitypool_7632fb71",
+    "identityPoolName": "amplifyauthsplimited429f3c47_identitypool_429f3c47",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplif7632fb71",
-    "userPoolName": "amplifyauthsplimited7632fb71_userpool_7632fb71",
+    "resourceNameTruncated": "amplif429f3c47",
+    "userPoolName": "amplifyauthsplimited429f3c47_userpool_429f3c47",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "amplif7632fb71_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplif429f3c47_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "7632fb71",
-    "resourceName": "amplifyauthsplimited7632fb71",
+    "sharedId": "429f3c47",
+    "resourceName": "amplifyauthsplimited429f3c47",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "defaultSocial",
     "hostedUI": true,
@@ -51,7 +51,7 @@
       "Google"
     ],
     "hostedUIProviderMeta": "[{\"ProviderName\":\"Google\",\"authorize_scopes\":\"openid email profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"sub\"}}]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://dev.dv1khyhqo2y2s.amplifyapp.com/auth/\"],\"LogoutURLs\":[\"https://dev.dv1khyhqo2y2s.amplifyapp.com/\"]}",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://prod.dv1khyhqo2y2s.amplifyapp.com/auth/\"],\"LogoutURLs\":[\"https://prod.dv1khyhqo2y2s.amplifyapp.com/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
