@@ -17,6 +17,14 @@
           "appId": "dv1khyhqo2y2s",
           "type": "manual"
         }
+      },
+      "auth": {
+        "amplifyauthsplimited7632fb71": {}
+      },
+      "function": {
+        "amplifyauthsplimited7632fb71PreSignup": {
+          "DOMAINALLOWLIST": ""
+        }
       }
     }
   },
