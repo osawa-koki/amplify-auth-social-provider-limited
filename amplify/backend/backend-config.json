@@ -54,7 +54,23 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_DOMAINALLOWLIST": {
+    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimited7632fb71PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimited7632fb71PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthsplimited7632fb71PreSignup_secretsPathAmplifyAppId": {
       "usedBy": [
         {
           "category": "function",
