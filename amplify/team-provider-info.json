@@ -17,6 +17,14 @@
           "appId": "d3i10263ngw8cz",
           "type": "manual"
         }
+      },
+      "auth": {
+        "amplifyauthsplimitedb1ce0bf7": {}
+      },
+      "function": {
+        "amplifyauthsplimitedb1ce0bf7PreSignup": {
+          "DOMAINALLOWLIST": "example.com"
+        }
       }
     }
   }
