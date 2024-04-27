@@ -1,0 +1,6 @@
+/build/
+/out/
+/playwright-report/
+/playwright.config.ts
+/src/**/*.js
+/amplify/
