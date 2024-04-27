@@ -10,6 +10,14 @@
       "StackName": "amplify-amplifyauthsplimited-dev-180039",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:938385028059:stack/amplify-amplifyauthsplimited-dev-180039/a02213c0-0474-11ef-93fd-0e9630bea38d",
       "AmplifyAppId": "d3i10263ngw8cz"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d3i10263ngw8cz",
+          "type": "manual"
+        }
+      }
     }
   }
 }
