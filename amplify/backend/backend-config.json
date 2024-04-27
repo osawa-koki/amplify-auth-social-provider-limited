@@ -37,10 +37,53 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    },
+    "amplifyauthsplimited7f61f2e6": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "amplifyauthsplimited7f61f2e6PreSignup",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [
+          "GOOGLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
     }
   },
   "function": {
     "amplifyauthsplimited7632fb71PreSignup": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "amplifyauthsplimited7f61f2e6PreSignup": {
       "build": true,
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
@@ -75,6 +118,14 @@
         {
           "category": "function",
           "resourceName": "amplifyauthsplimited7632fb71PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthsplimited7f61f2e6PreSignup_DOMAINALLOWLIST": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimited7f61f2e6PreSignup"
         }
       ]
     },

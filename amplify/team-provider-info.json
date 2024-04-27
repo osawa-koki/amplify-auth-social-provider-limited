@@ -52,13 +52,17 @@
         }
       },
       "auth": {
-        "amplifyauthsplimited7632fb71": {}
+        "amplifyauthsplimited7632fb71": {},
+        "amplifyauthsplimited7f61f2e6": {}
       },
       "function": {
         "amplifyauthsplimited7632fb71PreSignup": {
           "secretsPathAmplifyAppId": "dv1khyhqo2y2s",
           "deploymentBucketName": "amplify-amplifyauthsplimited-prod-141257-deployment",
           "s3Key": "amplify-builds/amplifyauthsplimited7632fb71PreSignup-41325539783953793678-build.zip"
+        },
+        "amplifyauthsplimited7f61f2e6PreSignup": {
+          "DOMAINALLOWLIST": "example.com"
         }
       }
     }

@@ -1,12 +1,12 @@
 {
   "AWSTemplateFormatVersion": "2010-09-09",
-  "Description": "{\"createdOn\":\"Mac\",\"createdBy\":\"Amplify\",\"createdWith\":\"12.8.2\",\"stackType\":\"function-Lambda\",\"metadata\":{}}",
+  "Description": "Lambda resource stack creation using Amplify CLI",
   "Parameters": {
     "DOMAINBLACKLIST": {
       "Type": "String",
       "Default": ""
     },
-    "DOMAINWHITELIST": {
+    "DOMAINALLOWLIST": {
       "Type": "String",
       "Default": ""
     },
@@ -44,12 +44,6 @@
     },
     "secretsPathAmplifyAppId": {
       "Type": "String"
-    },
-    "deploymentBucketName": {
-      "Type": "String"
-    },
-    "s3Key": {
-      "Type": "String"
     }
   },
   "Conditions": {
@@ -74,12 +68,12 @@
         "FunctionName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amplifyauthsplimited7632fb71PreSignup",
+            "amplifyauthsplimited7f61f2e6PreSignup",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amplifyauthsplimited7632fb71PreSignup",
+                  "amplifyauthsplimited7f61f2e6PreSignup",
                   "-",
                   {
                     "Ref": "env"
@@ -100,8 +94,8 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
-            "DOMAINWHITELIST": {
-              "Ref": "DOMAINWHITELIST"
+            "DOMAINALLOWLIST": {
+              "Ref": "DOMAINALLOWLIST"
             },
             "DOMAINBLACKLIST": {
               "Ref": "DOMAINBLACKLIST"
@@ -120,7 +114,7 @@
                         "env": {
                           "Ref": "env"
                         },
-                        "functionName": "amplifyauthsplimited7632fb71PreSignup"
+                        "functionName": "amplifyauthsplimited7f61f2e6PreSignup"
                       }
                     ]
                   },
@@ -137,15 +131,7 @@
           ]
         },
         "Runtime": "nodejs18.x",
-        "Timeout": 25,
-        "Code": {
-          "S3Bucket": {
-            "Ref": "deploymentBucketName"
-          },
-          "S3Key": {
-            "Ref": "s3Key"
-          }
-        }
+        "Timeout": 25
       }
     },
     "LambdaExecutionRole": {
@@ -154,12 +140,12 @@
         "RoleName": {
           "Fn::If": [
             "ShouldNotCreateEnvResources",
-            "amplifyauthsplimited7632fb71PreSignup",
+            "amplifyauthsplimited7f61f2e6PreSignup",
             {
               "Fn::Join": [
                 "",
                 [
-                  "amplifyauthsplimited7632fb71PreSignup",
+                  "amplifyauthsplimited7f61f2e6PreSignup",
                   "-",
                   {
                     "Ref": "env"
@@ -271,7 +257,7 @@
                           "env": {
                             "Ref": "env"
                           },
-                          "functionName": "amplifyauthsplimited7632fb71PreSignup"
+                          "functionName": "amplifyauthsplimited7f61f2e6PreSignup"
                         }
                       ]
                     },

@@ -52,25 +52,25 @@ GitHub Actionsのシークレット情報として以下の情報を設定して
 ---
 
 今回は、SSMを使用して登録可能なメールアドレスの正規表現パターンを保持しています。  
-具体的には、`./amplify/backend/function/amplifyauthsplimited7632fb71PreSignup/amplifyauthsplimited7632fb71PreSignup-cloudformation-template.json`の`ALLOWED_EMAIL_REGEX_LIST`を設定しています。  
+具体的には、`./amplify/backend/function/amplifyauthsplimited7f61f2e6PreSignup/amplifyauthsplimited7f61f2e6PreSignup-cloudformation-template.json`の`ALLOWED_EMAIL_REGEX_LIST`を設定しています。  
 また、上記で使用する値を`amplify/team-provider-info.json`で指定しています。  
 
-`ALLOWED_EMAIL_REGEX_LIST`環境変数にはSSMのパラメタストアのキーを指定し、`./amplify/backend/function/amplifyauthsplimited7632fb71PreSignup/src/email-filter-allowlist.ts`で使用しています。  
-また、LambdaからSSMにアクセスするために必要な権限を`./amplify/backend/function/amplifyauthsplimited7632fb71PreSignup/amplifyauthsplimited7632fb71PreSignup-cloudformation-template.json`に追加しています。  
+`ALLOWED_EMAIL_REGEX_LIST`環境変数にはSSMのパラメタストアのキーを指定し、`./amplify/backend/function/amplifyauthsplimited7f61f2e6PreSignup/src/email-filter-allowlist.ts`で使用しています。  
+また、LambdaからSSMにアクセスするために必要な権限を`./amplify/backend/function/amplifyauthsplimited7f61f2e6PreSignup/amplifyauthsplimited7f61f2e6PreSignup-cloudformation-template.json`に追加しています。  
 
 パラメタを登録するためには以下のコマンドを実行します。  
 
 ```shell
 aws ssm put-parameter \
-  --name "/amplify/<AppId>/<ENV>/AMPLIFY_amplifyauthsplimited7632fb71PreSignup_ALLOWED_EMAIL_REGEX_LIST" \
+  --name "/amplify/<AppId>/<ENV>/AMPLIFY_amplifyauthsplimited7f61f2e6PreSignup_ALLOWED_EMAIL_REGEX_LIST" \
   --value "<VALUE>" \
   --type "String" \
   --overwrite
 
 # 例)
 aws ssm put-parameter \
-  --name "/amplify/dv1khyhqo2y2s/prod/AMPLIFY_amplifyauthsplimited7632fb71PreSignup_ALLOWED_EMAIL_REGEX_LIST" \
-  --value ".+@osawa.cloud" \
+  --name "/amplify/dv1khyhqo2y2s/prod/AMPLIFY_amplifyauthsplimited7f61f2e6PreSignup_ALLOWED_EMAIL_REGEX_LIST" \
+  --value ".+@osawa.cloud$" \
   --type "String" \
   --overwrite
 ```
