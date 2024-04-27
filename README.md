@@ -5,6 +5,8 @@
 [![ci](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/ci.yml/badge.svg)](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/ci.yml)
 [![cd](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/cd.yml/badge.svg)](https://github.com/osawa-koki/amplify-auth-social-provider-limited/actions/workflows/cd.yml)
 
+![成果物](./fruit.gif)  
+
 ## 準備
 
 ```shell
