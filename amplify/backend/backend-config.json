@@ -62,6 +62,30 @@
         }
       ]
     },
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyauthsplimitedb1ce0bf7PreSignup_secretsPathAmplifyAppId": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyauthsplimitedb1ce0bf7PreSignup"
+        }
+      ]
+    },
     "AMPLIFY_hosting_amplifyhosting_appId": {
       "usedBy": [
         {
