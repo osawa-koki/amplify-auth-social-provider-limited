@@ -5,11 +5,21 @@ import { usePathname } from 'next/navigation'
 
 import { ToastContainer } from 'react-toastify'
 
+import 'react-toastify/dist/ReactToastify.css'
 import '@/styles/style.scss'
 import '@/styles/menu.scss'
 
 import setting from '@/setting'
 import Menu from '@/components/Menu'
+
+import { Amplify } from 'aws-amplify'
+
+import { Authenticator } from '@aws-amplify/ui-react'
+import '@aws-amplify/ui-react/styles.css'
+
+import awsExports from '@/src/aws-exports'
+
+Amplify.configure(awsExports)
 
 export default function RootLayout ({
   children
@@ -39,8 +49,18 @@ export default function RootLayout ({
       </head>
       <body>
         <div id="Wrapper">
-          <main>{children}</main>
-          <Menu currentPage={currentPage} />
+          <Authenticator.Provider>
+            <Authenticator signUpAttributes={['email', 'name']} socialProviders={['google']}>
+              {() => (
+                <>
+                  <main>
+                    {children}
+                  </main>
+                </>
+              )}
+            </Authenticator>
+            <Menu currentPage={currentPage} />
+          </Authenticator.Provider>
           <ToastContainer />
         </div>
         <footer>
